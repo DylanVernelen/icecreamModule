@@ -1,0 +1,22 @@
+icecream.settings:
+  type: mapping
+  label: 'Ice cream settings'
+  mapping:
+    thresholdIcecream:
+      type: integer
+      label: 'Number of users in need of ice cream required'
+    thresholdWaffles:
+      type: integer
+      label: 'Number of users in need of waffles required'
+    countIcecream:
+      type: integer
+      label: 'Number of ice cream ordered'
+    countWaffles:
+      type: integer
+      label: 'Number of waffles ordered'
+    OrderWaffles:
+      type: integer
+      label: 'Number of order for waffles'
+    OrderIcecream:
+      type: integer
+      label: 'Number of order for ice cream'

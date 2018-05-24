@@ -1,0 +1,55 @@
+<?php
+
+function icecream_waffle_orderform_schema() {
+  $schema['icecream_waffle_orderform.libraries.yml'] = [
+    'fields' => [
+      'id' => [
+        'description' => 'The primary identifier.',
+        'type' => 'serial',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+      ],
+
+      'keuze' => [
+        'description' => 'the snack',
+        'type' => 'varchar',
+        'length' => 32,
+        'not null' => TRUE,
+        'default' => '',
+      ],
+      'smaak' => [
+        'description' => 'the flavor of the ice cream',
+        'type' => 'varchar',
+        'length' => 32,
+        'not null' => FALSE,
+        'default' => '',
+      ],
+      'toppings' => [
+        'description' => 'the toppings for the waffle.',
+        'type' => 'varchar',
+        'length' => 32,
+        'not null' => FALSE,
+        'default' => '',
+      ],
+      'bestellingId' => [
+        'description' => 'the id of the order',
+        'type' => 'int',
+        'not null' => TRUE,
+        'default' => 0,
+      ],
+    ],
+    'primary key' => [
+      'id',
+    ],
+  ];
+
+  return $schema;
+}
+
+/**
+ * Create Thomas More social media counter table.
+ */
+function icecream_waffle_orderform_update_8001(&$sandbox) {
+  $table = icecream_waffle_orderform_schema();
+  \Drupal::database()->schema()->createTable('icecream_waffle_orderform.libraries.yml', $table['icecream_waffle_orderform.libraries.yml']);
+}

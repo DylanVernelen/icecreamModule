@@ -1,0 +1,5 @@
+icecream.settings:
+  title: Ice cream
+  description: 'Configure thresholds for ice cream and waffles'
+  parent: system.admin_config_ui
+  route_name: icecream.settings

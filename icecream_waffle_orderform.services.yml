@@ -1,0 +1,4 @@
+services:
+  icecream.icecream_manager:
+    class: Drupal\icecream_waffle_orderform\IcecreamManager
+    arguments: ['@database', '@config.factory']

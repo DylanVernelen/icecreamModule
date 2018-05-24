@@ -1,0 +1,6 @@
+name: Icecream or waffle form
+type: module
+description: 'Configure orderform for waffles or icecream'
+core: 8.x
+package: Order form
+dependencies: system

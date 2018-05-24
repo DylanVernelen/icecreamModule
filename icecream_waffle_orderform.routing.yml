@@ -1,0 +1,7 @@
+icecream.settings:
+  path: '/admin/config/icecreamAndWaffleSettings'
+  defaults:
+    _form: '\Drupal\icecream_waffle_orderform\Form\IcecreamAndWaffleSettingsForm'
+    _title: 'Ice cream and waffle settings'
+  requirements:
+    _permission: 'access administration pages'
