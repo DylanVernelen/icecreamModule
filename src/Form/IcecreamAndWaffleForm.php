@@ -48,6 +48,13 @@ class IcecreamAndWaffleForm extends ConfigFormBase {
         'pistache' => 'Pistache',
         'banaan' => 'Banaan',
       ],
+      '#states' => [
+        'visible' => [
+          ':input[name="keuze"]' => [
+            'value' => 'ijsje',
+          ]
+        ],
+      ],
     ];
 
     $form['toppings'] = [
@@ -56,6 +63,13 @@ class IcecreamAndWaffleForm extends ConfigFormBase {
         'chocolade_saus' => 'Chocolade saus',
         'slagroom' => 'Slagroom',
         'stroop' => 'Stroop',
+      ],
+      '#states' => [
+        'visible' => [
+          ':input[name="keuze"]' => [
+            'value' => 'wafel',
+          ]
+        ],
       ],
     ];
 
